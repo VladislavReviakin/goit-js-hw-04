@@ -1,6 +1,7 @@
-function isEnoughCapasity(products, containerSize) {
-    let totalSize = 0;
-    for (const fruit of products) {
+function isEnoughCapacity(products, containerSize) {
+  let totalSize = 0;
+  const fruits = Object.keys(products)
+    for (const fruit of fruits) {
         totalSize += fruit;
     }
     return totalSize <= containerSize
